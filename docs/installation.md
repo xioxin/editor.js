@@ -1,38 +1,37 @@
-# Installation Guide
+# 安装指南
 
-There are few steps to run Editor.js on your site.
+只需要简单几步就可以在您的网站上运行Editor.js。
 
-1. [Load Editor's core](#load-editors-core)
-2. [Load Tools](#load-tools)
-3. [Initialize Editor's instance](#create-editor-instance)
+1. [加载编辑器核心](#加载编辑器核心)
+2. [加载Tools](#load-tools)
+3. [初始化编辑器实例](#create-editor-instance)
 
-## Load Editor's core
+## 加载编辑器核心
 
-Firstly you need to get Editor.js itself. It is a [minified script](../dist/editor.js) with minimal available
+首先你需要加载Editor.js，[最小化代码](../dist/editor.js)。
 
-Choose the most usable method of getting an Editor for you.
+选择一个最适合你的加载方式：
 
-- Node package
-- Source from CDN
-- Local file from a project
+- Node包
+- 通过CDN加载
+- 在项目中直接使用源码
 
 ### Node.js
 
-Install the package via NPM or Yarn
+通过 NPM 或 Yarn 安装包
 
 ```shell
 npm i @editorjs/editorjs
 ```
 
-Include module at your application
-
+导入模块到你的应用
 ```javascript
 import EditorJS from '@editorjs/editorjs';
 ```
 
-### Use from CDN
+### 通过CDN加载
 
-You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@editorjs/editorjs).
+你可以通过[jsDelivr CDN](https://www.jsdelivr.com/package/npm/@editorjs/editorjs)加载特定的版本。
 
 `https://cdn.jsdelivr.net/npm/@editorjs/editorjs@2.10.0`
 
@@ -42,15 +41,15 @@ Then require this script.
 <script src="..."></script>
 ```
 
-### Save sources to project
+### 在项目中使用源码
 
-Copy [editor.js](../dist/editor.js) file to your project and load it.
+复制 [editor.js](../dist/editor.js) 到你的项目中并加载它。
 
 ```html
 <script src="editor.js"></script>
 ```
 
-## Load Tools
+## 加载Tools
 
 Each Block at the Editor.js represented by [Tools](tools.md). There are simple external scripts with their own logic. You'll probably want to use several Block Tools that should be connected.
 
